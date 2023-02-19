@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="eagle.css">
+    <link rel="icon" href="../EAGLE/imagenes/logo.png">
+    <title>EAGLE</title>
+</head>
+<body class="body">
+    <header>
+        <img class="logo" src="../EAGLE/imagenes/logo.png" alt="eagle" title="EAGLE - Registro">
+        <div class="div-calculadora">
+            <input class="numero-dividir" type="text" placeholder="mts2">
+            <p class="resultado">-</p>
+            <img class="dividir" src="./imagenes/dividir.png" alt="dividir" title="dividir">
+        </div>
+        <div class="btns-d">
+            <img class="calculadora" src="../EAGLE/imagenes/calculadora.png" alt="calculadora" title="calculadora">
+            <img class="alarma" src="./imagenes/alarm.png" alt="alarma" title="Programar aviso">
+            <img class="menu" src="./imagenes/menu.png" alt="menu">
+            <div class="div-programar-aviso">
+                <div class="header3">
+                    <img class="aviso-img" src="./imagenes/alarm.png">
+                    <p class="aviso">Programar aviso</p>
+                    <img class="close2" src="./imagenes/close.png" alt="cerrar" title="Cerrar">
+                </div>
+                <input class="numero" type="text" placeholder="Número">
+                <div class="clases">
+                    <input class="cventas" type="button" value="VENTAS">
+                    <input class="crollos" type="button" value="ROLLOS">
+                    <input class="cmts2" type="button" value="MTS2">
+                    <input class="cdinero" type="button" value="DINERO">
+                </div>
+                <p class="cancelar-aviso">No tienes avisos</p>
+            </div>
+        </div>
+        <div class="div-menu">
+            <div class="header2">
+                <img class="dark" src="./imagenes/night-mode.png" alt="night" title="Dark">
+                <img class="light" src="./imagenes/night-mode.png" alt="light" title="Light">
+                <p class="fecha"></p>
+                <img class="close" src="./imagenes/close.png" alt="close" title="close">
+            </div>
+            <img class="img-perfil" src="./imagenes/logo2 cbcerco.jpg" alt="profile-img">
+            <p class="nombre-perfil">CB CERCO</p>
+            <p class="registro">REGISTRO</p>
+            <div class="div-estadistica">
+                <div class="e1">
+                    <i><p class="ventas">Ventas</p></i>
+                    <p class="conteo1">0</p>
+                </div>
+                <div class="e2">
+                    <i><p class="mts2">mts2</p></i>
+                    <p class="conteo2">0</p>
+                </div>
+            </div>
+            <div class="div-estadistica">
+                <div class="e3">
+                    <i><p class="rollos">Rollos</p></i>
+                    <p class="conteo3">0</p>
+                </div>
+                <div class="e4">
+                    <i><p class="dinero"> € </p></i>
+                    <p class="conteo4">0</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article class="art1">
+            <form id="formulario">
+            <div class="info">
+                <img class="punto" src="./imagenes/verificado.png" alt="Punto de venta" title="Punto de venta">
+                <input class="nombre" type="text" placeholder="Nombre">
+                <input class="ubicación" type="text" placeholder="Ubicación">
+                <input class="cantidad" type="text" placeholder="Cantidad">
+                <input class="ancho" type="text" placeholder="Ancho">
+                <input class="color" type="text" placeholder="Color">
+                <img class="reload" src="./imagenes/reload.png" alt="actualizar" title="Actualizar">
+            </div>
+            <input class="guardar" type="button" value="GUARDAR">
+        </form>
+        </article>
+    <article class="art2">
+        <div class="div-data">
+            <div class="li-data">
+                <ul class="ul"></ul>
+            </div>
+            <div class="empty">
+                <p class="envios-pendientes">No tienes envios pendientes</p>
+            </div>
+                <img class="clear-storage" src="./imagenes/clear-storage.png" alt="clear" title="Limpiar almacenamieto">
+        </div>
+    </article>
+    <article class="art1">
+        <form id="form">
+        <div class="registro-inputs">
+            <img class="punto" src="./imagenes/verificado.png" alt="Punto de venta" title="Punto de venta" style="opacity: 0;">
+            <input class="ventas-r" type="text" placeholder="Ventas">
+            <input class="mts2-r" type="text" placeholder="Mts2">
+            <input class="rollos-r" type="text" placeholder="Rollos">
+            <input class="dinero-r" type="text" placeholder="€">
+            <img class="reload-r" src="./imagenes/reload.png" alt="actualizar" title="Actualizar" hidden>
+        </div>
+            <input class="registrar" type="button" value="REGISTRAR">
+    </form>
+    </article>
+    </section>
+    <script src="eagle.js"></script>
+</body>
+</html>

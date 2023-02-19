@@ -1,0 +1,703 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    height: auto;
+    width: 1520px;
+    margin: auto;
+    padding: 0px;
+    transition: all 0.5s;
+    background-color: rgb(235, 235, 235);
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.logo{
+    height: 60px;
+    width: auto;
+    margin-left: 50px;
+}
+.registro{
+    width: 100%;
+    text-align: start;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: gray;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+.btns-d{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 33px;
+}
+.menu{
+    height: 30px;
+    width: auto;
+    opacity: 0.5;
+    margin: 17px;
+}
+.alarma{
+    height: 30px;
+    width: auto;
+    opacity: 0.5;
+    margin: 17px;
+}
+.alarma:hover{
+    cursor: pointer;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.calculadora{
+    height: 31px;
+    width: auto;
+    margin-top: 2px;
+    margin: 17px;
+    opacity: 0.5;
+    transform: translateY(2px);
+}
+.calculadora:hover{
+    cursor: pointer;
+}
+.div-programar-aviso{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    background: linear-gradient(to right,rgb(112, 101, 167),rgb(211, 84, 158));
+    margin-top: 240px;
+    transform: translateX(-1500px);
+    border-radius: 10px;
+    z-index: 6;
+    box-shadow: 0px 3px 9px 0px rgb(149, 149, 149);
+    transition: 0.5s;
+    opacity: 0;
+}
+.numero{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+.clases{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.cventas{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px dashed white;
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.cventas:hover{
+    cursor: pointer;
+}
+.cmts2{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px dashed white;
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.cmts2:hover{
+    cursor: pointer;
+}
+.crollos{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px dashed white;
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.crollos:hover{
+    cursor: pointer;
+}
+.cdinero{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px dashed white;
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.cdinero:hover{
+    cursor: pointer;
+}
+.cancelar-aviso{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.close2{
+    height: 18px;
+    width: auto;
+    margin: 17px;
+    filter: invert(2);
+}
+.close2:hover{
+    cursor: pointer;
+}
+.header3{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aviso{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 1px;
+}
+.aviso-img{
+    height: 28px;
+    width: auto;
+    margin-left: 15px;
+    filter: invert(2);
+}
+.div-menu{
+    height: 700px;
+    background-color: rgb(240, 240, 240);
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 5;
+    margin-right: 30px;
+    margin-top: 640px;
+    transform: translateX(1600px);
+    transition: 0.5s;
+    padding: 10px;
+    box-shadow: 0px 3px 10px 0px rgb(155, 155, 155);
+}
+.header2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-10px);
+}
+.img-perfil{
+    height: 90px;
+    width: 90px;
+    margin: 20px;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: white;
+}
+.nombre-perfil{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(148, 148, 148);
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.fecha{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: grey;
+}
+.div-estadistica{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e1{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(246, 246, 246);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 14px 0px rgb(214, 214, 214);
+}
+.e2{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(246, 246, 246);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 14px 0px rgb(214, 214, 214);
+}
+.e3{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(246, 246, 246);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 14px 0px rgb(214, 214, 214);
+}
+.e4{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(246, 246, 246);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 14px 0px rgb(214, 214, 214);
+}
+.ventas{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(165, 165, 165);
+    margin: 0px;
+    transition: 0.5s;
+}
+.conteo1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(165, 165, 165);
+    transition: 0.5s;
+    margin: 30px;
+}
+.mts2{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(165, 165, 165);
+    margin: 0px;
+    transition: 0.5s;
+}
+.conteo2{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(165, 165, 165);
+    transition: 0.5s;
+    margin: 30px;
+}
+.rollos{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(165, 165, 165);
+    margin: 0px;
+    transition: 0.5s;
+}
+.conteo3{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(165, 165, 165);
+    transition: 0.5s;
+    margin: 30px;
+}
+.dinero{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(165, 165, 165);
+    margin: 0px;
+    transition: 0.5s;
+}
+.conteo4{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(165, 165, 165);
+    transition: 0.5s;
+    margin: 30px;
+}
+.close{
+    height: 20px;
+    width: auto;
+    margin-right: 20px;
+}
+.close:hover{   
+    cursor: pointer;
+}
+.dark{
+    height: 30px;
+    width: auto;
+    margin-left: 20px;
+}
+.dark:hover{
+    cursor: pointer;
+}
+.light{
+    height: 30px;
+    width: auto;
+    margin-left: 20px;
+    display: none;
+    filter: invert(2);
+}
+.light:hover{
+    cursor: pointer;
+}
+.div-calculadora{
+    height: 40px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 12px 0px rgb(224, 224, 224);
+    background-color: white;
+    border-radius: 40px;
+    margin-right: 50px;
+    transform: translateX(52px);
+    transition: all 1s;
+}
+.numero-dividir{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(149, 149, 149);
+}
+.resultado{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(149, 149, 149);
+    margin: 15px
+}
+.dividir{
+    height: 30px;
+    width: auto;
+    margin: 5px;
+}
+.dividir:hover{
+    cursor: pointer;
+}
+section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.art1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    margin: auto;
+    height: 50px;
+    width: 1000px;
+    box-shadow: 0px 3px 12px 0px rgb(224, 224, 224);
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+input::placeholder{
+    color: rgb(179, 179, 179);
+}
+.reload{
+    height: 40px;
+    width: auto;
+    opacity: 0.2;
+    margin-right: 5px;
+    transition: all 0.4s;
+}
+.reload:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.punto{
+    height: 45px;
+    width: auto;
+    margin-left: 5px;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+.punto:hover{
+    cursor: pointer;
+}
+.guardar{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    margin-top: 50px;
+    border: 2px solid rgb(184, 184, 184);
+    background-color: transparent;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    color: rgb(158, 158, 158);
+    transition: all 0.2s;
+}
+.guardar:hover{
+    cursor: pointer;
+}
+.div-data{
+    height: auto;
+    width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    box-shadow: 0px 3px 12px 0px rgb(224, 224, 224);
+    background-color: white;
+}
+.header{
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color:  rgb(112, 101, 167);
+}
+.p{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin: 30px;
+}
+.li-data{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    height: 40px;
+    width: 700px;
+    background: linear-gradient(to right, grey, transparent);
+    border: none;
+    border-radius: 10px;
+    list-style: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.btn-delete{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(231, 61, 61);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: 0px;
+}
+.btn-delete:hover{
+    cursor: pointer;
+}
+.envios-pendientes{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(149, 149, 149);
+    display: block;
+}
+.clear-storage{
+    height: 35px;
+    width: auto;
+    opacity: 0.3;
+    margin: 15px;
+    display: none;
+}
+.clear-storage:hover{
+    cursor: pointer;
+}
+.registro-inputs{
+    margin: auto;
+    height: 50px;
+    width: 1000px;
+    box-shadow: 0px 3px 12px 0px rgb(224, 224, 224);
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.registrar{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(184, 184, 184);
+    background-color: transparent;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    color: rgb(158, 158, 158);
+    transition: all 0.2s;
+}
+.registrar:hover{
+    cursor: pointer;
+}
+.ventas-r{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.mts2-r{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.rollos-r{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.dinero-r{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.reload-r{
+    height: 40px;
+    width: auto;
+    opacity: 0.2;
+    margin-right: 5px;
+    transition: all 0.4s;
+}
+.reload-r:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+}
